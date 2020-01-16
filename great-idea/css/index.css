@@ -135,6 +135,7 @@ button:hover {
 
 .button-center {
 	align-self: center;
+	background: none;
 }
 
 /* Headers */
