@@ -82,6 +82,11 @@ body {
 	border: 1px solid green;
 }
 
+/* @TODO: Remove */
+.container * {
+	border: 2px solid red;
+}
+
 /* Nav bar */
 nav {
 	display: flex;
@@ -112,7 +117,7 @@ nav a:hover {
 }
 
 /* Header */
-h1 {
+.header {
 	font-size: 72px;
 	text-align: center;
 }
@@ -129,6 +134,12 @@ button {
 button:hover {
 	color: #5393c0;
 	cursor: pointer;
+}
+
+/* Headers */
+h1 {
+	text-transform: uppercase;
+	font-size: 28px;
 }
 
 /* Main */
@@ -160,8 +171,13 @@ button:hover {
 	width: 32%;
 }
 
+/* Header Image */
+.header-img {
+	margin-top: 20px;
+}
+
 /* Banner Image */
-.middle-img {
+.banner-img {
 	width: 100%;
 }
 
