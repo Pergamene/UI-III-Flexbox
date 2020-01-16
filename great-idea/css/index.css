@@ -56,6 +56,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
@@ -69,39 +70,48 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 15px;
 }
 
+/* Site Frame */
+body {
+	display: flex;
+	justify-content: center;
+}
+
 .container {
-	margin: 0 50px;
+	margin: 25px 0;
+	max-width: 900px;
+	border: 1px solid green;
+}
+/*@TODO: Remove*/
+.container * {
+	border: 2px solid red;
 }
 
 /* Nav bar */
 nav {
-	padding:10px;
-	background-color: #5393c0;
-	width: 90%;
-	position: fixed;
-	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.links-container {
+	display: flex;
+	justify-content: space-between;
+	width: 65%;
+	align-items: center;
+}
+
+.logo-container {
+	display: flex;
 }
 
 nav a {
-	vertical-align: top;
-	display: inline-block;
 	font-size: 14px;
-	margin-left: 7%;
-	margin-top: 13px;
-	color: #000;
+	color: #b4b4b4;
 	text-decoration: none;
 }
 
-nav a:first-child {
-	margin-left: 0;
-}
-
 nav a:hover {
-	color: #b4b4b4;
-}
-
-.logo {
-	margin-left: 9%;
+	color: #5393c0;
 }
 
 /* Header */
